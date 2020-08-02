@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/authentication-service/authentication-service.iml" filepath="$PROJECT_DIR$/authentication-service/authentication-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/configuration-server/configuration-server.iml" filepath="$PROJECT_DIR$/configuration-server/configuration-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureak-client/eureak-client.iml" filepath="$PROJECT_DIR$/eureak-client/eureak-client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureak-cllent/eureak-cllent.iml" filepath="$PROJECT_DIR$/eureak-cllent/eureak-cllent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureak-ribbon/eureak-ribbon.iml" filepath="$PROJECT_DIR$/eureak-ribbon/eureak-ribbon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/licensing-server/licensing-server.iml" filepath="$PROJECT_DIR$/licensing-server/licensing-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/organization-service/organization-service.iml" filepath="$PROJECT_DIR$/organization-service/organization-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/spring-cloud.iml" filepath="$PROJECT_DIR$/.idea/spring-cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zuul-server/zuul-server.iml" filepath="$PROJECT_DIR$/zuul-server/zuul-server.iml" />
+    </modules>
+  </component>
+</project>

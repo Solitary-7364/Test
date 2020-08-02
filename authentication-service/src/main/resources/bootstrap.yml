@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: authenticationservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      enabled: true
+      uri: http://localhost:9999
+encrypt:
+  key: GUCHEN7364
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:8901/auth/user

@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: licensingservice
+  profiles:
+    active:
+      default
+  cloud:
+    config:
+      uri: http://localhost:9999
+      server:
+        encrypt:
+          enabled: false

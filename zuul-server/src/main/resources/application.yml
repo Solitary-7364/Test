@@ -1,0 +1,73 @@
+spring:
+  main:
+    allow-bean-definition-overriding: true
+
+server:
+  port: 5555
+
+  #Setting logging levels
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.thoughtmechanix: DEBUG
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+#zuul:
+#  prefix:  /api
+#  routes:
+#  ignored-services: '*'
+#    organizationservice: /organization/**
+#    licensingservice: /licensing/**
+##    baidustatic:
+##      path: /baidustatic/**
+##      url: http://www.baidu.com/
+#    ignored-services: '*'
+#
+#
+##下面的这个禁用了 ribbon和eureka的集成
+#    zuul:
+#      routes:
+#        baidustatic:
+#          path: /baidustatic/**
+#          serviceId: baidustatic
+#    ribbon:
+#      eureka:
+#        enable: false
+#    baidustatic:
+#      ribbon:
+#        listOfServers: http://www.baidu.com,zhttp://www.qq.com
+zuul:
+  prefix:  /api
+  routes:
+    organizationservice: /organization/**
+    licensingservice: /licensing/**
+    baidustatic:
+      path: /baidustatic/**
+      serviceId: baidustatic
+  ignored-services: '*'
+  host:
+    socket-timeout-millis: 10000
+    connect-timeout-millis: 10000
+  sensitive-headers:  Cookie,Set-Cookie
+
+baidustatic:
+  ribbon:
+    listOfServers: http://www.baidu.com,zhttp://www.12036.com
+
+ribbon:
+  eureka:
+    enable: false

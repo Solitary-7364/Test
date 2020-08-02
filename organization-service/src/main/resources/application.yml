@@ -1,0 +1,40 @@
+spring:
+  cloud:
+    stream:
+      bindings:
+        output:
+          destination:  orgChangeTopic
+          content-type: application/json
+      kafka:
+        binder:
+          zkNodes: localhost
+          brokers: localhost
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+  main:
+    allow-bean-definition-overriding: true
+
+eureka:
+  instance:
+    preferIpAddress: true
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://peer1:8761/eureka/,http://peer2:8762/eureka/
+
+#Setting logging levels
+logging:
+  level:
+    com.netflix: WARN
+    org.springframework.web: WARN
+    com.thoughtmechanix: DEBUG
+server:
+  port: 8081
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:8901/auth/user
+

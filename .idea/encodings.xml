@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/authentication-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/authentication-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configuration-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/configuration-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureak-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureak-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureak-cllent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureak-cllent/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureak-ribbon" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureak-ribbon/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/licensing-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/licensing-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/organization-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/organization-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zuul-server/src/main/java" charset="UTF-8" />
+  </component>
+</project>
